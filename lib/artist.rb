@@ -27,7 +27,8 @@ end
     else
       @name = name 
       @@all.push(self)
-      return self 
+     a = self
+     return a 
     end
     
   end
