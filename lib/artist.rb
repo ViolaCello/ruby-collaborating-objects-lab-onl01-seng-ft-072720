@@ -20,6 +20,7 @@ class Artist
 end
   
   def self.find_or_create_by_name(name)
+    binding.pry 
     @@all.each do |i|
       
       if i == self then return self 
@@ -28,7 +29,7 @@ end
       @@all.push(self)
       self 
     end
-    binding.pry 
+    
   end
 end
   
