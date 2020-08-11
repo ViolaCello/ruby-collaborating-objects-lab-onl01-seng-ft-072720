@@ -56,8 +56,10 @@ end
     artist
   end
   
-  def print_songs()
-    
+  def print_songs
+    a = songs 
+    puts a 
+  end
     
   
 end
