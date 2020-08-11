@@ -59,8 +59,8 @@ end
   
  # def print_songs
   #  a = songs
-    puts a 
-  end
+  #  puts a 
+  #end
     
      def print_songs()
     puts @songs.collect {|song| song.name}
