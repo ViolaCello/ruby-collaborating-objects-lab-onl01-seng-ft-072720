@@ -62,7 +62,7 @@ end
   #  puts a 
   #end
     
-     def print_songs()
+     def print_songs
     puts @songs.collect {|song| song.name}
   end
 
