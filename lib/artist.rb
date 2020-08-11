@@ -1,3 +1,4 @@
+require 'pry'
 class Artist 
   attr_accessor :name 
   @@all = [] 
@@ -20,6 +21,7 @@ end
   
   def self.find_or_create_by_name(name)
     @@all.each do |i|
+      binding.pry 
       if i == self then return self 
     else
       @name = name 
