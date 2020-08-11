@@ -18,5 +18,14 @@ class Artist
   song.artist = self
 end
   
+  def self.find_or_create_by_name(name)
+    @@all.each do |i|
+      if i == self then self 
+    else
+      @@all.push(self)
+      self 
+    end
+  end
+end
   
 end
