@@ -19,19 +19,27 @@ class Artist
   song.artist = self
 end
   
-  def self.find_or_create_by_name(name)
+ # def self.find_or_create_by_name(name)
    # binding.pry 
-    @@all.each do |i|
-      
-      if i == self then return self 
+  #  @@all.each do |i|
+   #   
+   #   if i == self then return self 
+  #  else
+  #    @name = name 
+  #    @@all.push(self)
+  #   a = self
+ #    return a 
+ #   end
+ #   
+ # end
+#end
+  
+    def self.find_or_create_by_name(name)
+    if self.find(name)
+      self.find(name)
     else
-      @name = name 
-      @@all.push(self)
-     a = self
-     return a 
+      self.create(name)
     end
-    
   end
-end
   
 end
