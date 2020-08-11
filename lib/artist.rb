@@ -57,10 +57,14 @@ end
     artist
   end
   
-  def print_songs
-    a = songs
+ # def print_songs
+  #  a = songs
     puts a 
   end
     
+     def print_songs()
+    puts @songs.collect {|song| song.name}
+  end
+
   
 end
