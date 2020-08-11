@@ -22,6 +22,7 @@ end
     @@all.each do |i|
       if i == self then return self 
     else
+      @name = name 
       @@all.push(self)
       self 
     end
