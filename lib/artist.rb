@@ -20,7 +20,7 @@ end
   
   def self.find_or_create_by_name(name)
     @@all.each do |i|
-      if i == self then self 
+      if i == self then return self 
     else
       @@all.push(self)
       self 
