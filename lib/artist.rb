@@ -56,4 +56,7 @@ end
     artist
   end
   
+  def print_songs(name)
+    
+  
 end
