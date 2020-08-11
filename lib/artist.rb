@@ -57,7 +57,7 @@ end
   end
   
   def print_songs
-    a = songs 
+    a = songs.name 
     puts a 
   end
     
